@@ -1,4 +1,3 @@
-package com.divyam;
 
 public class Student_Functionalities {
     String name;
@@ -8,7 +7,35 @@ public class Student_Functionalities {
     String status;
     float inhand;
 
-    Student_Functionalities(String name,int roll_no,float cgpa,String branch,String status,int inhand) {
+    private float final_cgpa;
+    private String password;
+    private String CTC;
+
+    public float getFinal_cgpa() {
+        return final_cgpa;
+    }
+
+    public void setFinal_cgpa(float final_cgpa) {
+        this.final_cgpa = final_cgpa;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getCTC() {
+        return CTC;
+    }
+
+    public void setCTC(String CTC) {
+        this.CTC = CTC;
+    }
+
+    Student_Functionalities(String name, int roll_no, float cgpa, String branch, String status, int inhand) {
         this.name = name;
         this.roll_no = roll_no;
         this.cgpa = cgpa;

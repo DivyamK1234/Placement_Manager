@@ -1,4 +1,3 @@
-package com.divyam;
 
 import java.util.*;
 import java.text.SimpleDateFormat;
@@ -20,13 +19,13 @@ public class Main {
 
         int num_of_blockst=0;
 
-        Student_Functionalities add_students[] = new Student_Functionalities[100];
-        Student_Functionalities reg_students[] = new Student_Functionalities[100];
+        Student_Functionalities[] add_students = new Student_Functionalities[100];
+        Student_Functionalities[] reg_students = new Student_Functionalities[100];
 
-        company_details comp[] = new company_details[100];
-        company_details compRegistered[] = new company_details[100];
+        company_details[] comp = new company_details[100];
+        company_details[] compRegistered = new company_details[100];
 
-        Students_selected st_selected[] = new Students_selected[100];
+        Students_selected[] st_selected = new Students_selected[100];
         int num_of_stselected = 0;
 
         int co=0;  //iterator for array of companies
@@ -46,6 +45,7 @@ public class Main {
             select = sc.nextInt();
 
             if (select == 2) {
+                System.out.println("Thanks for Using FutureBuilder!!!!!!");
                 break;
             }
 
@@ -141,7 +141,7 @@ public class Main {
                                 while (true) {
                                     System.out.println("Following are the students selected-");
                                     for (int p = 0; p < num_of_stselected; p++) {
-                                        System.out.println(p+")");
+                                        System.out.println(p+") GooFlix");
                                         System.out.println("Name : "+st_selected[p].namm);
                                         System.out.println("RollNo : "+st_selected[p].rolly);
                                         System.out.println("CGPA : "+st_selected[p].cgpp);
@@ -231,6 +231,7 @@ public class Main {
 
                                             if (sel == 1) {
                                                 while (true) {
+                                                    String oll = sc.nextLine();
                                                     String updated_role = sc.nextLine();
                                                     comp[i].role = updated_role;
                                                     break;
@@ -436,6 +437,7 @@ public class Main {
                                                             }
                                                         break;
                                                         }
+                                                        break;
 
 
                                                     }

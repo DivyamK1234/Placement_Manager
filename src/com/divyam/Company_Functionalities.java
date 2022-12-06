@@ -1,5 +1,4 @@
-package com.divyam;
-
+import java.util.ArrayList;
 
 public class Company_Functionalities {
 }
@@ -10,7 +9,17 @@ class company_details {
     float ctc;
     float cgpa;
 
-    company_details (String name,String profile,float ctc,float cgpa) {
+    private ArrayList students;
+
+    public ArrayList getStudents() {
+        return students;
+    }
+
+    public void setStudents(ArrayList students) {
+        this.students = students;
+    }
+
+    company_details (String name, String profile, float ctc, float cgpa) {
         this.name = name;
         this.role = profile;
         this.ctc = ctc;
@@ -18,5 +27,3 @@ class company_details {
     }
 
 }
-
-
